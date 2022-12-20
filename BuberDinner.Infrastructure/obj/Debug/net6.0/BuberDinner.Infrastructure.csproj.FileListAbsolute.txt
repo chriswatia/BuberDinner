@@ -1,0 +1,17 @@
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net6.0\BuberDinner.Infrastructure.deps.json
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net6.0\BuberDinner.Infrastructure.dll
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net6.0\BuberDinner.Infrastructure.pdb
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\BuberDinner.Infrastructure.csproj.AssemblyReference.cache
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\BuberDinner.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\BuberDinner.Infrastructure.AssemblyInfoInputs.cache
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\BuberDinner.Infrastructure.AssemblyInfo.cs
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\BuberDinner.Infrastructure.csproj.CoreCompileInputs.cache
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\BuberDinner.Infrastructure.dll
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\refint\BuberDinner.Infrastructure.dll
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\BuberDinner.Infrastructure.pdb
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\ref\BuberDinner.Infrastructure.dll
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net6.0\BuberDinner.Application.dll
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net6.0\BuberDinner.Domain.dll
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net6.0\BuberDinner.Application.pdb
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\bin\Debug\net6.0\BuberDinner.Domain.pdb
+F:\Learning\aspnet\BuberDinner\BuberDinner.Infrastructure\obj\Debug\net6.0\BuberDinner.Infrastructure.csproj.CopyComplete
