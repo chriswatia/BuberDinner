@@ -12,7 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
     //Register App dependency Injection
     builder.Services
         .AddApplication()
-        .AddInfrastructure();
+        .AddInfrastructure(builder.Configuration);
 
     builder.Services.AddControllers();
 }
