@@ -48,10 +48,5 @@ namespace BuberDinner.Infrastructure.Authentication
 
             return new JwtSecurityTokenHandler().WriteToken(securityToken);
         }
-
-        public string GenerateToken(Guid id, User user)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
