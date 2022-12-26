@@ -6,7 +6,8 @@ namespace BuberDinner.Api.Controllers;
 
 [ApiController]
 [Route("auth")]
-public class AuthenticationController : ControllerBase{
+public class AuthenticationController : ControllerBase
+{
     private readonly IAuthenticationService _authenticationService;
 
     //Constructor
