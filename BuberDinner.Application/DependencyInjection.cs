@@ -1,19 +1,15 @@
 ﻿using BuberDinner.Infrastructure.Services.Authentication;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BuberDinner.Infrastructure;
-
-public static class DependencyInjection
+namespace BuberDinner.Infrastructure
 {
-    public static IServiceCollection AddApplication(this IServiceCollection services)
+    public static class DependencyInjection
     {
-        services.AddScoped<IAuthenticationService, AuthenticationService>();
+        public static IServiceCollection AddApplication(this IServiceCollection services)
+        {
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
 
-        return services;
+            return services;
+        }
     }
 }
