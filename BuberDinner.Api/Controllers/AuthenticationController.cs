@@ -1,29 +1,34 @@
 using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Contracts.Authentication;
-using BuberDinner.Infrastructure.Services.Authentication;
 using ErrorOr;
 using BuberDinner.Domain.Common.Errors;
+using BuberDinner.Application.Common.Services;
+using MediatR;
+using BuberDinner.Application.Authentication.Commands.Register;
+using BuberDinner.Application.Authentication.Queries.Login;
+
 namespace BuberDinner.Api.Controllers;
 
 [Route("auth")]
 public class AuthenticationController : ApiController
 {
-    private readonly IAuthenticationService _authenticationService;
+    private readonly ISender _mediator;
 
-    //Constructor
-    public AuthenticationController(IAuthenticationService authenticationService)
+    public AuthenticationController(ISender mediator)
     {
-        _authenticationService = authenticationService;
+        _mediator = mediator;
     }
 
     [HttpPost("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> Register(RegisterRequest request)
     {
-        ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
+        var command = new RegisterCommand(
             request.FirstName,
             request.LastName,
             request.Email,
             request.Password);
+
+        ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
         return authResult.Match(
             authResult => Ok(MapAuthResult(authResult)),
@@ -31,10 +36,12 @@ public class AuthenticationController : ApiController
     }    
 
     [HttpPost("login")]
-    public IActionResult Login(LoginRequest request){
-        ErrorOr<AuthenticationResult> authResult = _authenticationService.Login(
+    public async Task<IActionResult> Login(LoginRequest request){
+        var query = new LoginQuery(
             request.Email,
             request.Password);
+
+        ErrorOr<AuthenticationResult> authResult = await _mediator.Send(query);
 
         if(authResult.IsError && authResult.FirstError == AuthenticationErrors.InvalidCredentials)
         {
