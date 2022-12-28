@@ -7,7 +7,7 @@ using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace BuberDinner.Infrastructure
+namespace BuberDinner.Application
 {
     public static class DependencyInjection
     {

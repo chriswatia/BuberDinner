@@ -13,7 +13,7 @@
 
   <ItemGroup>
 	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
-
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.12" />
 	  <ProjectReference Include="..\BuberDinner.Application\BuberDinner.Application.csproj" />
   </ItemGroup>
 </Project>
