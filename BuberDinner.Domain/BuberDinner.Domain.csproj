@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="ErrorOr" Version="1.2.1" />
+    <PackageReference Include="ardalis.smartenum" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Host\Entities\" />
   </ItemGroup>
 
 </Project>
